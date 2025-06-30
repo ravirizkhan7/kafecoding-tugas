@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muhammad Ravi Rizkhan - Web Developer & UI/UX Designer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <span>Muhammad Ravi</span>
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+      <div class="container">
+        <div class="home-content">
+          <div class="home-text">
+            <h1 class="name">Muhammad Ravi Rizkhan</h1>
+            <div class="typing-container">
+              <span class="typing-text" id="typingText"></span>
+              <span class="cursor">|</span>
+            </div>
+            <p class="home-description">
+              Passionate about creating beautiful, functional, and user-centered
+              digital experiences.
+            </p>
+            <div class="cta-buttons">
+              <a href="#about" class="btn btn-primary">Learn More</a>
+              <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+          </div>
+          <div class="home-image">
+            <div class="profile-container">
+              <img
+                src="dist/assets/1.jpg"
+                alt="Muhammad Ravi Rizkhan"
+                class="profile-image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">Get to know me better</p>
+        </div>
+        <div class="about-content">
+          <div class="about-image">
+            <img
+              src="dist/assets/1.jpg"
+              alt="Muhammad Ravi Rizkhan"
+              class="about-photo"
+            />
+          </div>
+          <div class="about-text">
+            <h3>Web Developer & UI/UX Designer</h3>
+            <p>
+              I'm a passionate web developer and UI/UX designer with a keen eye
+              for creating beautiful, functional, and user-centered digital
+              experiences. With expertise in modern web technologies and design
+              principles, I bring ideas to life through clean code and intuitive
+              interfaces.
+            </p>
+            <p>
+              My journey in tech started with curiosity about how websites work,
+              and it has evolved into a career dedicated to crafting exceptional
+              digital products. I believe in the power of good design to solve
+              problems and create meaningful connections between users and
+              technology.
+            </p>
+            <div class="skills">
+              <div class="skill-item">Frontend Development</div>
+              <div class="skill-item">UI/UX Design</div>
+              <div class="skill-item">Responsive Design</div>
+              <div class="skill-item">User Experience</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Contact Me</h2>
+          <p class="section-subtitle">Let's work together</p>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Get In Touch</h3>
+            <p>
+              Ready to start your next project? I'd love to hear from you. Send
+              me a message and I'll respond as soon as possible.
+            </p>
+            <div class="contact-details">
+              <div class="contact-item">
+                <strong>Email:</strong> ravi.rizkhan@email.com
+              </div>
+              <div class="contact-item">
+                <strong>Phone:</strong> +62 8XX-XXXX-XXXX
+              </div>
+              <div class="contact-item">
+                <strong>Location:</strong> Indonesia
+              </div>
+            </div>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Muhammad Ravi Rizkhan. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
