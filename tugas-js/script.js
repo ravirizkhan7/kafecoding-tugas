@@ -238,3 +238,32 @@ document.addEventListener("DOMContentLoaded", function () {
   // Log untuk debugging (bisa dihapus di production)
   console.log("Website berhasil dimuat dan semua fungsi telah diinisialisasi!");
 });
+
+// cara membuat warna pada text navbar dengan window.onload scroll ganti warna seperti class active pada navbar
+window.onload = function () {
+  const navLinks = document.querySelectorAll(".nav-item .nav-link");
+  const sections = document.querySelectorAll("section");
+
+  window.addEventListener("scroll", () => {
+    let currentSection = "";
+
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+
+      if (pageYOffset >= sectionTop - sectionHeight / 3) {
+        currentSection = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach((link) => {
+      link.classList.remove("active");
+      if (link.getAttribute("href").substring(1) === currentSection) {
+        link.classList.add("active");
+        link.style.color = "#2563eb"; // Ganti warna sesuai dengan class active
+      } else {
+        link.style.color = ""; // Kembalikan ke warna default
+      }
+    });
+  });
+};
